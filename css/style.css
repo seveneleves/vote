@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#subtitle {
+  font-size: 1.4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto auto 2em auto;
+}
+
+.containee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* border: 1px solid black; */
+  width: 310px;
+  padding: 0;
+  margin: 0;
+}
+
+.qr {
+  width: 100%;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1em auto 0.5em auto;
+}
+
+.addresses {
+  font-size: 1rem;
+  font-weight: 400;
+  word-break: break-all;
+  width: 290px;
+}
+
+.addresses::selection {
+  background-color: transparent;
+}
+
+.addresses::-moz-selection {
+  background-color: transparent;
+}
+
+button {
+  width: 100px;
+  height: 35px;
+  background-color: #7571FB;
+  color: white;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  margin-top: 0.7em;
+  box-shadow: 0px 2.5px 0px #845BE3;
+}
+
+button:hover {
+  background-color: #9694FA;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.div_to_animate {
+  position: absolute;
+  display: none;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #4dcc7d;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.animation {
+  display: block;
+  animation-name: up;
+  animation-duration: 2s;
+}
+
+@keyframes up {
+  0% {
+    top: -50px;
+  }
+
+  25% {
+    top: 0px;
+  }
+
+  75% {
+    top: 0px;
+  }
+
+  100% {
+    top: -50px;
+  }
+}
+
+#credits {
+  margin: 2em auto 2em auto;
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  #subtitle {
+    font-size: 2.3rem;
+    margin-bottom: -1em;
+  }
+
+  .containee {
+    width: 700px;
+    margin-bottom: 1em;
+  }
+
+  .qr {
+    width: 100%;
+    margin-bottom: -3em;
+  }
+
+  p {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 2em auto 0.5em auto;
+  }
+
+  .addresses {
+    font-size: 2rem;
+    font-weight: 400;
+    word-break: break-all;
+    width: 680px;
+  }
+
+  .addresses::selection {
+    background-color: transparent;
+  }
+
+  button {
+    width: 200px;
+    height: 70px;
+    background-color: #7571FB;
+    color: white;
+    border-radius: 7px;
+    font-size: 2rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 0.5em;
+    box-shadow: 0px 3px 0px #845BE3;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  .div_to_animate {
+    font-size: 2.2rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 370px;
+    height: 90px;
+    line-height: 90px;
+  }
+
+  @keyframes up {
+    0% {
+      top: -90px;
+    }
+
+    25% {
+      top: 0px;
+    }
+
+    75% {
+      top: 0px;
+    }
+
+    100% {
+      top: -90px;
+    }
+  }
+
+  #credits {
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  #subtitle {
+    font-size: 2.3rem;
+    margin-bottom: -1em;
+  }
+
+  .containee {
+    width: 700px;
+    margin-bottom: 1em;
+  }
+
+  .qr {
+    width: 100%;
+    margin-bottom: -3em;
+  }
+
+  p {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 2em auto 0.5em auto;
+  }
+
+  .addresses {
+    font-size: 2rem;
+    font-weight: 400;
+    word-break: break-all;
+    width: 680px;
+  }
+
+  .addresses::selection {
+    background-color: transparent;
+  }
+
+  button {
+    width: 200px;
+    height: 70px;
+    background-color: #7571FB;
+    color: white;
+    border-radius: 7px;
+    font-size: 2rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 0.5em;
+    box-shadow: 0px 3px 0px #845BE3;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  .div_to_animate {
+    font-size: 2.2rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 370px;
+    height: 90px;
+    line-height: 90px;
+  }
+
+  @keyframes up {
+    0% {
+      top: -90px;
+    }
+
+    25% {
+      top: 0px;
+    }
+
+    75% {
+      top: 0px;
+    }
+
+    100% {
+      top: -90px;
+    }
+  }
+
+  #credits {
+    font-size: 2rem;
+  }
+
+}

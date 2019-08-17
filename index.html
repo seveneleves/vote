@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Voting Platform</title>
+  </head>
+  <body>
+    <h1>Let's vote!</h1>
+    <p id="subtitle"><b>Scan the QR</b> or <b>copy the address</b> to send your Token</p>
+    <div class="container">
+      <div class="containee">
+        <p>TECH ONE</p>
+        <img class="qr" src="assets/blockchain.png">
+        <p id="blockchain_address" class="addresses">0x9c66cf3fa2ABc4d706d1dEd2b9Bd252E10096327</p>
+        <button id="blockchain_button" class="button" data-clipboard-target="#blockchain_address">Copy</button>
+      </div>
+      <div class="containee">
+        <p>TECH TWO</p>
+        <img class="qr" src="assets/ia.png">
+        <p id="ia_address" class="addresses">0x334592C96de5c21009F4A7424d64Eec117AfB315</p>
+        <button id="ia_button" class="button" data-clipboard-target="#ia_address">Copy</button>
+      </div>
+      <div class="containee">
+        <p>TECH THREE</p>
+        <img class="qr" src="assets/bigdata.png">
+        <p id="bigdata_address" class="addresses">0x6c452727B9Fee468a5ECb0DdF8e69cCa605536ac</p>
+        <button id="bdata_button" class="button" data-clipboard-target="#bigdata_address">Copy</button>
+      </div>
+      <div class="containee">
+        <p>TECH FOUR</p>
+        <img class="qr" src="assets/workplace.png">
+        <p id="smart_address" class="addresses">0x528b32B0E1D7ab66670E74D68D5d060cFfddc1df</p>
+        <button id="sworkplace_button" class="button" data-clipboard-target="#smart_address">Copy</button>
+      </div>
+    </div>
+    <!-- <p id="credits">by mc²i Groupe | <a href="http://www.mc2i.fr/" target="_blank">mc2i.fr</a></p> -->
+    <div class="div_to_animate">Address copied!</div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script>
+      var iaBtn = document.getElementById('ia_button');
+      var clipboard = new ClipboardJS(iaBtn);
+      var bcBtn = document.getElementById('blockchain_button');
+      var clipboard = new ClipboardJS(bcBtn);
+      var bgBtn = document.getElementById('bdata_button');
+      var clipboard = new ClipboardJS(bgBtn);
+      var swBtn = document.getElementById('sworkplace_button');
+      var clipboard = new ClipboardJS(swBtn);
+    </script>
+  </body>
+</html>
